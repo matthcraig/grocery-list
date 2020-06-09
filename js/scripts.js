@@ -9,9 +9,11 @@ $(document).ready(function(){
 
     const array = [entry1, entry2, entry3, entry4, entry5, entry6];
     array.sort();
-    
-    $("#result").append("<li>" + array + "</li");
-    
+    let result;
+    array.forEach(function(result){
+    array.slice(0);
+    $("#result").append("<li>" + result + "</li");
+    })
     event.preventDefault();
   });
 });
